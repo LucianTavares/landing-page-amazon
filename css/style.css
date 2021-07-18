@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img{
+    image-rendering: pixelated;
+    max-width: 100%;
+}
+
+.section-container-one{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card-section-one{
+    position: relative;
+}
+
+.card-section-one img{
+    width: 95%;
+}
+
+@media screen and (max-width: 762px) {
+
+    .section-container-one{
+        display: inline-block;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .section-container-one img{
+        width: 100%;
+    }
+}
+
+h2{
+    font-size: 40px;
+    font-family: cursive;
+    color: rgb(179, 135, 24);
+    text-align: center;
+    text-shadow: 4px 1px 4px black;
+}
+
+.section-container-two{
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-lotr{
+    margin-left: 150px;
+}
+
+#descricao{
+    font-size: 23px;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.section-container-two iframe{
+    box-shadow: 5px 1px 5px 1px goldenrod;
+    border-radius: 20px; 
+    margin-right: 50px;  
+}
+
+@media screen and (max-width: 1100px) {
+
+    .section-container-two{
+        display: inline-block;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .section-container-two img{
+        width: 50%;
+    }
+
+    .section-container-two iframe{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+}
+
+.section-container-three{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-section-one{
+    background-image: url(../images/blue-tech.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-section-two{
+    background-image: url(../images/ring1-ajustado.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-section-three{
+    background-image: url(../images/blue-tech.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-container{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 2px 5px 2px black;
+    padding: 25px;
+    width: 500px;
+    max-width: 600px;
+    max-height: 500px;
+    align-content: center;
+    display: grid;
+}
+
+@media  (max-width: 900px;) {
+    .card-container{
+        width: 100%;
+    }
+}
+
+#formulario{
+    font-size: 20px;
+    font-family: cursive;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-container{
+    position: relative;
+    align-items: center;
+}
+
+input{
+    width: 400px;
+    padding: 20px;
+    font-size: 18px;
+    color: darkblue;
+    outline: none;
+    border: 3px solid darkblue;
+    border-radius: 20px;
+    font-family: cursive;
+    margin: 15px;
+}
+
+span{
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    pointer-events: none;
+    font-weight: 600;
+    font-family: cursive;
+    transition: .4s;
+    color: #181818;
+}
+
+input:focus{
+    border: none;
+    outline: 3px solid darkblue;
+}
+
+input:focus + span,
+input:valid + span{
+    top: 0px;
+    left: 20px;
+    font-size: 18px;
+    padding: 0 10px;
+    background: white;
+}
+
+footer{
+    height: 100px;
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+}
+
+footer, p{
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
