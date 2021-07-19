@@ -108,21 +108,21 @@ h2{
 }
 
 .background-section-one{
-    background-image: url(../images/blue-tech.png);
+    background-image: url(../images/blue-tech-red.png);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .background-section-two{
-    background-image: url(../images/ring1-ajustado.jpg);
+    background-image: url(../images/ring.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .background-section-three{
-    background-image: url(../images/blue-tech.png);
+    background-image: url(../images/blue-tech-red.png);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -142,7 +142,7 @@ h2{
 
 @media  (max-width: 900px;) {
     .card-container{
-        width: 90%;
+        max-width: 90%;
     }
 }
 
