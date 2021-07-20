@@ -137,14 +137,13 @@ h2{
     border-radius: 20px;
     box-shadow: 5px 2px 5px 2px black;
     padding: 25px;
-    max-width: 600px;
+    max-width: 500px;
     max-height: 500px;
     align-content: center;
-    display: grid;
     margin: auto;
 }
 
-@media  (max-width: 900px;) {
+@media  (max-width: 900px) {
     .card-container{
         max-width: 100%;
     }
